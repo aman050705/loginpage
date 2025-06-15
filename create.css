@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(215, 215, 253));
+    height: 100vh;
+
+}
+
+.register{
+    height: 430px;
+    width: 250px;
+    border: 0.01px solid rgb(252, 233, 233);
+    box-shadow: -5px -5px 10px white, 2px 2px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+.input-tab{
+    /* background-color: red; */
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    background:transparent;
+    margin-left: 6px;
+}
+
+.input-box{
+    width: 200px;
+    height: 65px;
+    border: 0.1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 4px black, inset -2px -2px 10px white;
+}
+
+
+.BTN{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+button{
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    border: 01px solid whitesmoke;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 15px black;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 15px;
+    background-color: white;
+    transition: 1.5s;
+    filter: blur(1px);
+    transform: rotate(-20deg) translate(-70px,-45px);
+}
+
+button:hover::before{
+    transform: rotate(-20deg) translate(190px,35px);
+}
+
+
+.have-aact{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.have-aact p{
+    font-size: 15px;
+}
+
